@@ -17,15 +17,13 @@
     color: #6B3F2A;
     font-size: 24px;
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: none; /*For Removing Underline*/
 }
 
 .nav-links {
     display: flex;
     gap: 28px;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 .nav-links a {
@@ -53,7 +51,7 @@
             rgba(25, 19, 15, 0.88),
             rgba(25, 19, 15, 0.25)
         ),
-        url("../images/hero.jpg");
+        url("images/hero.png");
 
     background-size: cover;
     background-position: center;
@@ -99,7 +97,7 @@
     font-weight: bold;
     border-radius: 5px;
 
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /*For Hover Effect Smoothness*/
 }
 
 .hero-button:hover {
