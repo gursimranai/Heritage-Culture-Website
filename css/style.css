@@ -10,14 +10,16 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 7%;
-    background-color: #fae9bd;
+    background: linear-gradient(90deg,
+                                rgba(206, 165, 131, 0.894),
+                                rgba(250, 212, 142,1))   
 }
 
 .logo {
     color: #6B3F2A;
     font-size: 24px;
     font-weight: bold;
-    text-decoration: none; /* For Removing Underline */
+    text-decoration: none;        /* For Removing Underline */
 }
 
 .nav-links {
@@ -51,7 +53,7 @@
             rgba(25, 19, 15, 0.88),
             rgba(25, 19, 15, 0.25)
         ),
-        url("images/hero.png");
+        url("../images/hero.png");
 
     background-size: cover;
     background-position: center;
@@ -103,3 +105,107 @@
 .hero-button:hover {
     background-color: #8B4528;
 }
+
+
+/* Explore India's Heritage Section */
+
+.explore-section {
+    padding: 80px 7%;
+    background-color: #F7F1E5;
+}
+
+/* Section Heading */
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.section-label {
+    color: #B85C38;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.section-heading h2 {
+    color: #6B3F2A;
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.section-heading p:last-child {
+    color: #66564B;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Category Grid */
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+/* Category Cards */
+
+.category-card {
+    background-color: #FFFDF8;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(52, 37, 31, 0.08);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 28px rgba(52, 37, 31, 0.15);
+}
+
+/* Card Images */
+
+.category-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Card Content */
+
+.category-content {
+    padding: 25px;
+}
+
+.category-content h3 {
+    color: #6B3F2A;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.category-content p {
+    color: #66564B;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.category-content a {
+    color: #B85C38;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.category-content a:hover {
+    color: #6B3F2A;
+}
+
+
+
