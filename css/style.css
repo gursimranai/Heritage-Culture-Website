@@ -390,3 +390,130 @@
         height: 230px;
     }
 } */
+
+
+/* Festivals of India Section */
+
+.festivals-section {
+    padding: 80px 7%;
+    background-color: #F1E8DC;
+}
+
+
+/* Festival Grid */
+
+.festival-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+/* Festival Card */
+
+.festival-card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.festival-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
+}
+
+
+/* Festival Image */
+
+.festival-image {
+    height: 210px;
+    overflow: hidden;
+}
+
+.festival-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.festival-card:hover .festival-image img {
+    transform: scale(1.08);
+}
+
+
+/* Festival Content */
+
+.festival-content {
+    padding: 22px;
+}
+
+.festival-tag {
+    display: inline-block;
+    color: #B85C38;
+    background-color: #F8EBDD;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.festival-content h3 {
+    color: #493126;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.festival-content p {
+    color: #75665D;
+    font-size: 14px;
+    line-height: 1.7;
+    min-height: 96px;
+}
+
+
+/* Festival Link */
+
+.festival-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #B85C38;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.festival-link i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.festival-link:hover i {
+    transform: translateX(5px);
+}
+
+/* 
+/* Responsive Design 
+
+@media (max-width: 1100px) {
+    .festival-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .festivals-section {
+        padding: 60px 5%;
+    }
+
+    .festival-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .festival-image {
+        height: 230px;
+    }
+} */
