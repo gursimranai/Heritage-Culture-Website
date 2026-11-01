@@ -207,5 +207,186 @@
     color: #6B3F2A;
 }
 
+/* Responsive Design 
+
+@media (max-width: 900px) {
+
+    .category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .explore-section {
+        padding: 55px 6%;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+} */
 
 
+/* Featured Heritage Destinations Section */
+
+.destinations-section {
+    padding: 80px 7%;
+    background-color: #FAF6EF;
+}
+
+/* Section Heading */
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.section-label {
+    color: #B85C38;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    color: #493126;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    color: #75665D;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* Destination Grid */
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+/* Destination Card */
+
+.destination-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
+}
+
+
+/* Destination Image */
+
+.destination-image {
+    height: 210px;
+    overflow: hidden;
+}
+
+.destination-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.destination-card:hover .destination-image img {
+    transform: scale(1.08);
+}
+
+
+/* Destination Content */
+
+.destination-content {
+    padding: 22px;
+}
+
+.destination-location {
+    color: #B85C38;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.destination-location i {
+    margin-right: 5px;
+}
+
+.destination-content h3 {
+    color: #493126;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.destination-content > p:not(.destination-location) {
+    color: #75665D;
+    font-size: 14px;
+    line-height: 1.7;
+    min-height: 96px;
+}
+
+
+/* Discover More Link */
+
+.destination-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #B85C38;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.destination-link i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.destination-link:hover i {
+    transform: translateX(5px);
+}
+
+/* 
+/* Responsive Design 
+
+@media (max-width: 1100px) {
+    .destination-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .destinations-section {
+        padding: 60px 5%;
+    }
+
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .destination-image {
+        height: 230px;
+    }
+} */
