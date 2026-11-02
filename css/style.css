@@ -641,3 +641,123 @@
         height: 230px;
     }
 }
+
+
+
+/* Interesting Facts Section */
+
+.facts-section {
+    padding: 80px 7%;
+    background-color: #493126;
+}
+
+
+/* Section Heading */
+
+.facts-section .section-heading h2 {
+    color: #FFFFFF;
+}
+
+.facts-section .section-description {
+    color: #E0D2C5;
+}
+
+.facts-section .section-label {
+    color: #F0C987;
+}
+
+
+/* Facts Grid */
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+
+/* Fact Card */
+
+.fact-card {
+    background-color: #FAF6EF;
+    padding: 28px 23px;
+    border-radius: 10px;
+    border-bottom: 4px solid #B85C38;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.fact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Fact Number and Icon */
+
+.fact-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.fact-number {
+    color: #B85C38;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.fact-icon {
+    color: #B85C38;
+    font-size: 27px;
+}
+
+
+/* Fact Content */
+
+.fact-card h3 {
+    color: #493126;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.fact-card p {
+    color: #75665D;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+
+/* Fact Category */
+
+.fact-category {
+    display: inline-block;
+    color: #B85C38;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding-top: 12px;
+    border-top: 1px solid #DCCFC2;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 1100px) {
+    .facts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .facts-section {
+        padding: 60px 5%;
+    }
+
+    .facts-grid {
+        grid-template-columns: 1fr;
+    }
+}
