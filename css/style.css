@@ -1465,3 +1465,167 @@
         font-size: 28px;
     }
 }
+
+
+/* ============================= */
+/* CULTURE PAGE                   */
+/* ============================= */
+
+.culture-hero {
+    min-height: 480px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(rgba(35, 24, 18, 0.55), rgba(35, 24, 18, 0.55)),
+        url("../images/culture-hero.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.culture-hero-content {
+    max-width: 700px;
+    color: #FAF6EF;
+}
+
+.culture-label {
+    color: #F0C987;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+.culture-hero-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.culture-hero-content > p:not(.culture-label) {
+    max-width: 600px;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.culture-intro {
+    padding: 75px 8%;
+    background-color: #FAF6EF;
+    text-align: center;
+}
+
+.culture-intro .section-heading {
+    margin-bottom: 20px;
+}
+
+.culture-intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #75665D;
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+.culture-collection {
+    padding: 80px 8%;
+    background-color: #F1E8DC;
+}
+
+.culture-collection .section-heading {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.culture-collection .section-heading h2 {
+    color: #493126;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.culture-collection .section-heading > p:last-child {
+    color: #75665D;
+    line-height: 1.7;
+}
+
+.culture-page-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.culture-page-card {
+    background-color: #FAF6EF;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(52, 37, 31, 0.10);
+    transition: transform 0.3s ease;
+}
+
+.culture-page-card:hover {
+    transform: translateY(-7px);
+}
+
+.culture-page-card img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.culture-page-content {
+    padding: 22px;
+}
+
+.culture-category {
+    color: #B85C38;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.culture-page-content h3 {
+    color: #493126;
+    font-size: 22px;
+    margin: 12px 0;
+}
+
+.culture-page-content p {
+    color: #75665D;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Responsive layout */
+
+@media (max-width: 1000px) {
+    .culture-page-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .culture-hero {
+        min-height: 400px;
+        padding: 60px 6%;
+    }
+
+    .culture-hero-content h1 {
+        font-size: 34px;
+    }
+
+    .culture-intro,
+    .culture-collection {
+        padding: 55px 6%;
+    }
+
+    .culture-page-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .culture-collection .section-heading h2 {
+        font-size: 28px;
+    }
+}
